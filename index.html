@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,57 @@
 
 <body>
   <!-- Шапка сайта-->
-  <header>Шапка сайта</header>
+  <header class="header">
+    <div class="header__wrapper">
+      <button class="header__logo" type="button" id="logo">
+        <img src="assets/icons/logo.svg" alt="ZEN" />
+      </button>
+      <ul class="menu" id="menu">
+        <!-- Item 1 -->
+        <li class="menu__item">
+          <a href="#downloand">Downloand</a>
+        </li>
+        <!-- Item 2 -->
+        <li class="menu__item">
+          <a href="#warranty">Warranty</a>
+        </li>
+        <!-- Item 3 -->
+        <li class="menu__item">
+          <a href="#care">Care</a>
+        </li>
+        <!-- Item 4 -->
+        <li class="menu__item">
+          <a href="#cashback">Cashback</a>
+        </li>
+        <!-- Item 5 -->
+        <li class="menu__item">
+          <a href="#clients">Clients</a>
+        </li>
+      </ul>
+      <div class="header__actions">
+        <!-- Lang -->
+        <select class="header__lang" id="lang">
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+        <!-- Theme -->
+        <button class="header__theme" type="button" id="theme">
+          <img src="assets/icons/moon.svg" alt="Moon" />
+        </button>
+        <!-- Burger -->
+        <button class="header__burger" type="button" id="burger">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
   <!-- Секция 1-->
   <section class="download" id="download">
     <div class="download__wrapper">
       <div class="download__text-block">
         <h1 class="download__title">Peaceful shopping mindful money</h1>
-        <p class="download__copy">See how we can help with making your shopping experience and money management more ZEN.</p>
+        <p class="download__copy">See how we can help with making your shopping experience and money management more
+          ZEN.</p>
         <div class="download__links">
           <a class="download__link" href="https://apple.com">
             <img src="./assets/icons/apple.svg" alt="Apple icon" />
@@ -39,14 +84,14 @@
           devices start failing after the standard warranty ends, which is pretty common.
         </p>
         <p class="warranty__copy">
-          When you buy any electronics with your ZEN shopping Mastercard, 
+          When you buy any electronics with your ZEN shopping Mastercard,
           their warranty gets extended by one year. How does it work? It simply does. Automatically.
         </p>
       </div>
       <div class="warranty__image-block">
         <img src="./assets/images/2.jpg" alt="Basket" />
       </div>
-    </div>    
+    </div>
   </section>
   <!-- Секция 3-->
   <section class="care" id="care">
@@ -54,25 +99,28 @@
       <div class="care__text-block">
         <h2 class="care__title">ZEN Care</h2>
         <p class="care__copy">Shopping online is usually a delightful experience. Until it's not.</p>
-        <p class="care__copy">Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.</p>
+        <p class="care__copy">Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in
+          for long product return procedures.</p>
         <p class="care__copy">But, here comes ZEN Care: a free, built-in shopping protection.</p>
       </div>
       <div class="care__image-block">
         <img src="./assets/images/3.jpg" alt="Card" />
       </div>
-    </div>    
+    </div>
   </section>
   <!-- Секция 4-->
   <section class="cashback" id="cashback">
     <div class="cashback__wrapper">
       <div class="cashback__text-block">
         <h2 class="cashback__title">and cashback!</h2>
-        <p class="cashback__copy">It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.</p>
+        <p class="cashback__copy">It saves a little bit of money while you’re shopping, but in many cases it takes ages
+          to get anything out of it.</p>
         <p class="cashback__copy">We gave it a thought and made cashback way more friendly.</p>
-        <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.</p>
-        <button class="cashback__button" type="button" id="order-open">Order a consultation</button>  
+        <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account
+          right after the purchase.</p>
+        <button class="cashback__button" type="button" id="order-open">Order a consultation</button>
       </div>
-    </div>  
+    </div>
   </section>
   <!-- Секция 5-->
   <section class="clients" id="clients">
@@ -116,4 +164,5 @@
   <!-- Подвал сайта -->
   <footer>Подвал сайта</footer>
 </body>
+
 </html>
