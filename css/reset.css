@@ -3,9 +3,23 @@
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 ul, 
 ol {
   list-style:none;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -14,27 +28,19 @@ a {
 }
 
 button {
+  font: inherit;
   color: inherit;
-  font-size: inherit;
   background: none;
   border: none;
 }
 
 select {
-  border: none;
   appearance: none;
+  border: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-  font-size: inherit;
-}
-
-img {
-  width: 100%;
+input {
+  appearance: none;
+  background: none;
+  border: none;
 }
