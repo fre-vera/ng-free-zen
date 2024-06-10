@@ -15,9 +15,10 @@
   <link rel="stylesheet" href="css/warranty.css" />
   <link rel="stylesheet" href="css/care.css" />
   <link rel="stylesheet" href="css/cashback.css" />
+  <link rel="stylesheet" href="css/clients.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/column.css" />
-  <link rel="stylesheet" href="css/clients.css" />
+  <link rel="stylesheet" href="css/modal.css" />
 </head>
 
 <body>
@@ -294,8 +295,8 @@
           <img src="assets/icons/developer.svg" alt="Developer">
         </a>
       </div>
-    </footer>
     </div>
+  </footer>
   <!-- Модальное окно -->
   <div class="modal" id="modal">
     <div class="modal__body">
@@ -306,7 +307,7 @@
       <!-- Title -->
       <h3 class="modal__title">Order a consultation</h3>
       <!-- Form -->
-      <form class="form" id="order">
+      <form class="form" id="order" style="display: none;">
         <!-- Name -->
         <label class="form__input">
           <span>Name</span>
@@ -331,7 +332,7 @@
           </select>
         </label>
         <!-- Privacy policy -->
-        <label class="form__chekbox">
+        <label class="form__checkbox">
           <input type="checkbox" id="policy" />
           <a href="https://example.com/policy" target="_blank">Privacy policy</a>
         </label>
