@@ -1,8 +1,8 @@
 @mixin font_face(
-  $family,
   $path,
   $fileName,
-  $weight,
+  $family,
+  $weight
 ) {
   @font-face {
     font-family: $family;
