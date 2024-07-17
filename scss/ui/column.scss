@@ -1,20 +1,22 @@
 /* column */
-.column img {
-  width: 40px;
-  height: 40px;
-}
+.column {
+  img {
+    width: 40px;
+    height: 40px;
+  }
 
-.column__title {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-}
+  &__title {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+  }
 
-.column__list {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  margin-top: 20px;
-}
+  &__list {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+  }
 
-.column__item {
-  margin-top: 10px;
+  &__item {
+    margin-top: 10px;
+  }
 }

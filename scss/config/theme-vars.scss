@@ -1,0 +1,36 @@
+.app {
+  &.light {
+    //color:
+    --color-primary: #000;
+    --color-secondary: #fff;
+    --color-footer: #fff;
+
+    //border-color:
+    --border-color-primary: #aaa;
+    --border-color-secondary: #000;
+
+    //bg-color:
+    --bg-color-primary: #fff;
+    --bg-color-footer: #484848;
+    --bg-color-modal-primary: #fff;
+    --bg-color-modal-secondary: rgba(0, 0, 0, 0.6);
+    --bg-color-burger: #000; 
+  }
+
+  &.dark {
+    //color:
+    --color-primary: #fff;
+    --color-footer: #fff;
+    
+    //border-color:
+    --border-color-primary: #fff;
+    --border-color-secondary: #fff;
+
+    //bg-color:
+    --bg-color-primary: #484848;
+    --bg-color-footer: #484848;
+    --bg-color-modal-primary: #fff;
+    --bg-color-modal-secondary: rgba(0, 0, 0, 0.8);
+    --bg-color-burger: #fff;
+  }
+}

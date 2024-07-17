@@ -1,7 +1,10 @@
+@import 'config/reset';
+@import 'config/breakpoints';
+@import 'config/common-vars';
+@import 'config/theme-vars';
 @import 'utilis/mixins';
-@import 'confing/reset';
-@import 'confing/fonts';
-@import 'confing/global';
+@import 'config/fonts';
+@import 'config/global';
 @import 'features/menu';
 @import 'features/burger';
 @import 'ui/column';

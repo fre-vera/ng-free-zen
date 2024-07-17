@@ -1,35 +1,35 @@
 /* cashback */
+@import '../utilis/mixins.scss';
+
 .cashback {
-  padding: 30px 15px;
-}
+  padding: $padding-section-xs;
 
-.cashback__wrapper {
-  display: flex;
-  flex-direction: column;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-/* .cashback__text-block {} */
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
 
-.cashback__title {
-  font-size: 26px;
-  font-weight: 700;
-}
+  &__copy:first-of-type {
+    margin-top: 20px;
+  }
 
-.cashback__copy:first-of-type {
-  margin-top: 20px;
-}
+  &__copy {
+    margin-top: 10px;
+  }
 
-.cashback__copy {
-  margin-top: 10px;
-}
-
-.cashback__button {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 14px 72px;
-  border: 1px solid #aaa;
-  border-radius: 30px;
+  &__button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 14px 72px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 30px;
+  }
 }

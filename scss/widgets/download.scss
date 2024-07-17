@@ -1,48 +1,48 @@
 /* download */
+@import '../utilis/mixins.scss';
+
 .download {
-  padding: 30px 15px;
-}
+  padding: $padding-section-xs;
 
-.download__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+  }
 
-/* .download__text-block {} */
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
 
-.download__title {
-  font-size: 30px;
-  font-weight: 700;
-}
+  &__copy {
+    margin-top: 20px;
+  }
 
-.download__copy {
-  margin-top: 20px;
-}
+  &__links {
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-small;
+  }
 
-.download__links {
-  margin-top: 20px;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+  &__link {
+    display: block;
+    width: 150px;
+    height: 44px;
+  }
 
-.download__link {
-  display: block;
-  width: 150px;
-  height: 44px;
-}
+  &__image-block {
+    height: 72vw;
+    border: 1px solid var(--border-color-primary);
+    border-radius: $border-radius-primary;
+    overflow: hidden;
 
-.download__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.download__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

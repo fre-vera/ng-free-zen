@@ -1,37 +1,38 @@
 /* warranty */
+@import '../utilis/mixins.scss';
+
 .warranty {
-  padding: 30px 15px;
-}
+  padding: $padding-section-xs;
 
-.warranty__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+  }
 
-/* .warranty__text-block {} */
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
 
-.warranty__title {
-  font-size: 26px;
-  font-weight: 700;
-}
+  &__copy:first-of-type {
+    margin-top: 20px;
+  }
 
-.warranty__copy:first-of-type {
-  margin-top: 20px;
-}
+  &__copy {
+    margin-top: 10px;
+  }
 
-.warranty__copy {
-  margin-top: 10px;
-}
+  &__image-block {
+    height: 72vw;
+    border: 1px solid var(--border-color-primary);
+    border-radius: $border-radius-primary;
+    overflow: hidden;
 
-.warranty__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.warranty__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
