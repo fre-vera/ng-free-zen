@@ -3,7 +3,8 @@
 
 .modal {
   display: none;
-  background: var(--bg-color-modal-secondar);
+  background: var(--bg-color-modal-secondary);
+  color: var(--color-secondary);
 
   &.active {
     position: fixed;
@@ -22,7 +23,7 @@
     padding: 30px 20px;
     display: grid;
     gap: 20px;
-    background: var(--bg-color-primary);
+    background: var(--bg-color-modal-primary);
     border-radius: 5px;
   }
 

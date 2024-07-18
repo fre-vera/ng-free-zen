@@ -20,8 +20,11 @@
     width: 77px;
     height: 30px;
 
-    img {
+    svg {
       height: 100%;
+      path {
+        fill: var(--color-icon);
+      }
     }
   }
 
@@ -42,7 +45,7 @@
     border-radius: 4px;
     overflow: hidden;
 
-    img {
+    svg {
       position: absolute;
       z-index: -1;
       top: 50%;
@@ -50,6 +53,9 @@
       transform: translateY(-50%);
       width: 9px;
       height: 6px;
+      path {
+        fill: var(--color-icon);
+      }
     }
 
   select {

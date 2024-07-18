@@ -44,7 +44,6 @@ select {
 
 .app.light {
   --color-primary: #000;
-  --color-secondary: #fff;
   --color-footer: #fff;
   --border-color-primary: #aaa;
   --border-color-secondary: #000;
@@ -53,17 +52,20 @@ select {
   --bg-color-modal-primary: #fff;
   --bg-color-modal-secondary: rgba(0, 0, 0, 0.6);
   --bg-color-burger: #000;
+  --color-icon: #000;
 }
 .app.dark {
   --color-primary: #fff;
+  --color-secondary: #222;
   --color-footer: #fff;
-  --border-color-primary: #fff;
+  --border-color-primary: #aaa;
   --border-color-secondary: #fff;
   --bg-color-primary: #484848;
   --bg-color-footer: #484848;
   --bg-color-modal-primary: #fff;
   --bg-color-modal-secondary: rgba(0, 0, 0, 0.8);
   --bg-color-burger: #fff;
+  --color-icon: #fff;
 }
 
 /* fonts */
@@ -207,8 +209,11 @@ img {
   width: 77px;
   height: 30px;
 }
-.header__logo img {
+.header__logo svg {
   height: 100%;
+}
+.header__logo svg path {
+  fill: var(--color-icon);
 }
 .header__actions {
   margin-left: auto;
@@ -226,7 +231,7 @@ img {
   border-radius: 4px;
   overflow: hidden;
 }
-.header__lang img {
+.header__lang svg {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -234,6 +239,9 @@ img {
   transform: translateY(-50%);
   width: 9px;
   height: 6px;
+}
+.header__lang svg path {
+  fill: var(--color-icon);
 }
 .header__lang select {
   padding-left: 8px;
@@ -424,7 +432,8 @@ img {
 /* modal */
 .modal {
   display: none;
-  background: var(--bg-color-modal-secondar);
+  background: var(--bg-color-modal-secondary);
+  color: var(--color-secondary);
 }
 .modal.active {
   position: fixed;
@@ -442,7 +451,7 @@ img {
   padding: 30px 20px;
   display: grid;
   gap: 20px;
-  background: var(--bg-color-primary);
+  background: var(--bg-color-modal-primary);
   border-radius: 5px;
 }
 .modal__close {
@@ -469,6 +478,7 @@ img {
 .form {
   display: grid;
   gap: 15px;
+  color: var(--color-secondary);
 }
 .form__field {
   display: block;

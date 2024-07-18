@@ -1,8 +1,7 @@
 .app {
   &.light {
-    //color:
+    //color-text:
     --color-primary: #000;
-    --color-secondary: #fff;
     --color-footer: #fff;
 
     //border-color:
@@ -15,15 +14,19 @@
     --bg-color-modal-primary: #fff;
     --bg-color-modal-secondary: rgba(0, 0, 0, 0.6);
     --bg-color-burger: #000; 
+
+    //color-icon:
+    --color-icon: #000;
   }
 
   &.dark {
-    //color:
+    //color-text:
     --color-primary: #fff;
+    --color-secondary: #222;
     --color-footer: #fff;
     
     //border-color:
-    --border-color-primary: #fff;
+    --border-color-primary: #aaa;
     --border-color-secondary: #fff;
 
     //bg-color:
@@ -32,5 +35,8 @@
     --bg-color-modal-primary: #fff;
     --bg-color-modal-secondary: rgba(0, 0, 0, 0.8);
     --bg-color-burger: #fff;
+
+    //color-icon:
+    --color-icon: #fff;
   }
 }
