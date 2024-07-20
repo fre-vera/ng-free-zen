@@ -1,22 +1,20 @@
 /* column */
 .column {
-  img {
-    width: 40px;
-    height: 40px;
-  }
-
   &__title {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
-
   &__list {
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
+    display: grid;
+    gap: 10px;
   }
-
   &__item {
-    margin-top: 10px;
+    font-size: 14px;
+    & img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

@@ -39,7 +39,7 @@
     border-radius: $border-radius-primary;
     overflow: hidden;
 
-    img {
+    & img {
       display: block;
       height: 100%;
       object-fit: cover;

@@ -173,21 +173,22 @@ img {
 }
 
 /* column */
-.column img {
-  width: 40px;
-  height: 40px;
-}
 .column__title {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 .column__list {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  margin-top: 20px;
+  display: grid;
+  gap: 10px;
 }
 .column__item {
-  margin-top: 10px;
+  font-size: 14px;
+}
+.column__item img {
+  width: 40px;
+  height: 40px;
 }
 
 /* header */
