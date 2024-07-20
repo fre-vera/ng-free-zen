@@ -1,0 +1,35 @@
+/* cashback */
+@import '../utilis/mixins.scss';
+
+.cashback {
+  padding: $padding-section-xs;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  &__copy:first-of-type {
+    margin-top: 20px;
+  }
+
+  &__copy {
+    margin-top: 10px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 14px 72px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 30px;
+  }
+}

@@ -1,0 +1,17 @@
+/* clients */
+@import '../utilis/mixins.scss';
+
+.clients {
+  padding: $padding-section-xs;
+
+  &__wrapper {
+    display: grid;
+    gap: $gap-large;
+  }
+
+  &__brands {
+    display: grid;
+    gap: $gap-large;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

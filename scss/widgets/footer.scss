@@ -1,0 +1,36 @@
+/* footer */
+@import '../utilis/mixins.scss';
+
+.footer {
+  padding: $padding-section-xs;
+  color: var(--color-footer);
+  background: var(--bg-color-footer);
+
+  &__wrapper {
+    display: grid;
+    gap: $gap-large;
+  }
+
+  &__columns {
+    display: grid;
+    gap: $gap-large;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__copy {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  &__dev {
+    display: flex;
+    justify-content: center;
+
+  &  img {
+      width: 130px;
+      height: 46px;
+      margin-top: 10px;
+    }
+  }
+}

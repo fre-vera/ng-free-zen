@@ -1,0 +1,42 @@
+.app {
+  &.light {
+    //color-text:
+    --color-primary: #000;
+    --color-footer: #fff;
+
+    //border-color:
+    --border-color-primary: #aaa;
+    --border-color-secondary: #000;
+
+    //bg-color:
+    --bg-color-primary: #fff;
+    --bg-color-footer: #484848;
+    --bg-color-modal-primary: #fff;
+    --bg-color-modal-secondary: rgba(0, 0, 0, 0.6);
+    --bg-color-burger: #000; 
+
+    //color-icon:
+    --color-icon: #000;
+  }
+
+  &.dark {
+    //color-text:
+    --color-primary: #fff;
+    --color-secondary: #222;
+    --color-footer: #fff;
+    
+    //border-color:
+    --border-color-primary: #aaa;
+    --border-color-secondary: #fff;
+
+    //bg-color:
+    --bg-color-primary: #484848;
+    --bg-color-footer: #484848;
+    --bg-color-modal-primary: #fff;
+    --bg-color-modal-secondary: rgba(0, 0, 0, 0.8);
+    --bg-color-burger: #fff;
+
+    //color-icon:
+    --color-icon: #fff;
+  }
+}
