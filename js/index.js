@@ -1,3 +1,3 @@
-import {header, download, warranty, care, cashback, clients, footer} from './data.js';
+import {primaryInfo, download, warranty, care, cashback, clients, secondaryInfo} from './data.js';
 
-console.log(clients.brands[5].darkSource);
+console.log(clients.brands[0].logo.darkSource);
