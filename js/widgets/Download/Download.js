@@ -20,17 +20,18 @@ export const Download = (data) => {
       <div class="download__text-block">
         ${Title(title, 'download__title')}
         ${texts.map((text) => `<p class="download__copy">${text}</p>`).join('')}
-        ${links.map((link) => `<div class="download__links">
-          <a class="download__link" href="${link.url}">
-          ${`<img src='${LinkImages[link.name]}' alt='${link.name}'>`}
-          </a>
-          </div>`).join('')}
-    </div>
-    <div class="download__image-block">
-      <img src="${image.source}" alt="${image.description}">
+        ${links.map((link) => `
+          <div class="download__links">
+            <a class="download__link" href="${link.url}">
+              ${`<img src='${LinkImages[link.name]}' alt='${link.name}'>`}
+            </a>
+          </div>
+        `).join('')}
       </div>
+      <div class="download__image-block">
+        <img src="${image.source}" alt="${image.description}">
+      </div>
+    </div>
   </section>
   `;
 };
-
-
