@@ -1,5 +1,5 @@
 import { Title } from '../../ui/Title/Title.js';
-import { LinkImages } from '../../ui/Links/Links.js';
+import { LinkImage } from '../../ui/Links/Links.js';
 
 /**
  * @typedef {import('./types').DownloadData} DownloadData
@@ -22,7 +22,7 @@ export const Download = (data) => {
           ${links.map((link) => `
             <div class="download__links">
               <a class="download__link" href="${link.url}">
-                ${`<img src='${LinkImages[link.name]}' alt='${link.name}'>`}
+                ${`<img src='${LinkImage[link.name]}' alt='${link.name}'>`}
               </a>
             </div>
           `).join('')}

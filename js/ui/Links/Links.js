@@ -1,5 +1,5 @@
 /**
- * @typedef {import('./types').LinkImages} linkImages
+ * @typedef {import('./types').LinkImage} linkImages
 /**
 
 /**
@@ -7,7 +7,7 @@
  * @property {string} google
  */
 
-export const LinkImages = {
+export const LinkImage = {
   apple: './assets/icons/apple.svg',
   google: './assets/icons/google.svg',
 };

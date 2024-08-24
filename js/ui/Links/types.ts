@@ -3,7 +3,7 @@ export type LinkData = {
   url: string;
 };
 
-export type LinkImages = {
+export type LinkImage = {
   name: string;
   source: string;
 };
