@@ -2,6 +2,7 @@
  * @typedef {import('./types').TitleData} TitleData
  */
 /**
+
 /**
  * @function Title
  * @param {TitleData} data
