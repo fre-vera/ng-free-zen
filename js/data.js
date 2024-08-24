@@ -56,7 +56,10 @@ export const data = {
     },
   },
   warranty:  {
-    title: '1-year warranty boost',
+    title: {
+      content: '1-year warranty boost',
+      priority: 1,
+    },
     texts: [
       'ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.',
       'PWhen you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.',
@@ -67,7 +70,10 @@ export const data = {
     },
   },
   care: {
-    title: 'ZEN Care',
+    title: {
+      content: 'ZEN Care',
+      priority: 1,
+    },
     texts: [
       'Shopping online is usually a delightful experience. Until it s not.',
       'Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.',
@@ -79,7 +85,10 @@ export const data = {
     },
   },
   cashback:  {
-    title: 'and cashback!',
+    title: {
+      content: 'and cashback!',
+      priority: 1,
+    },
     texts: [
       'It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.',
       'We gave it a thought and made cashback way more friendly.',
