@@ -1,5 +1,5 @@
-import { Title } from '../../ui/Title/Title.js';
-import { LinkImage } from '../../ui/Links/Links.js';
+import { Title } from '../../ui/Title/index.js';
+import { LinkImage } from '../../ui/LinkImage/index.js';
 
 /**
  * @typedef {import('./types').DownloadData} DownloadData
