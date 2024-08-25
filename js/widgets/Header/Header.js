@@ -1,5 +1,8 @@
 import { Logo } from '../../features/Logo/Logo.js';
 import { Navigation } from '../../features/Navigation/Navigation.js';
+import { Lang } from '../../features/Lang/Lang.js';
+import { Theme } from '../../features/Theme/Theme.js';
+import { Burger } from '../../features/Burger/Burger.js';
 
 /**
  * @typedef {import('./types').HeaderData} HeaderData
@@ -19,9 +22,9 @@ export const Header = (data) => `
         ${Navigation(data.navigation)}
       </nav>
       <div class="header__actions">
-        <!-- Lang -->
-        <!-- Theme -->
-        <!-- Burger -->
+        ${Lang('header__lang')}
+        ${Theme('header__theme')}
+        ${Burger('burger')}
       </div>
     </div>
   </header>
