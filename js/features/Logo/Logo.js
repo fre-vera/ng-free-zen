@@ -11,6 +11,6 @@ export const Logo = (className) => `
     type="button"
     id="logo"
   >
-  ${Iconlogo()}
+    ${Iconlogo()}
   </button>
 `;

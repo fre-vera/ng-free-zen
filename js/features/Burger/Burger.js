@@ -9,7 +9,6 @@ export const Burger = (className) => `
     type="button"
     id="burger"
   >
-    <span>
-    </span>
+    <span></span>
   </button>
 `;
