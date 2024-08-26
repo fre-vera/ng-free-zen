@@ -5,7 +5,7 @@ import { Title } from '../../ui/Title/index.js';
 /**
 
 /**
- * @function Download
+ * @function Warranty
  * @param {WarrantyData} data
  * @returns {string} HTML
  */
