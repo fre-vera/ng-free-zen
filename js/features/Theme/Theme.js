@@ -11,6 +11,6 @@ export const Theme = (className) => `
     type="button"
     id="theme"
   >
-  ${IconTheme()}
+    ${IconTheme()}
   </button>
 `;
