@@ -8,7 +8,7 @@ export type ImageData = {
   description: string;
 };
 
-export type WarrantydData = {
+export type WarrantyData = {
   title: TitleData;
   texts: string[];
   image: ImageData;

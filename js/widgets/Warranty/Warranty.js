@@ -1,7 +1,7 @@
 import { Title } from '../../ui/Title/index.js';
 
 /**
- * @typedef {import('./types.js').WarrantydData} WarrantyData
+ * @typedef {import('./types.js').WarrantyData} WarrantyData
 /**
 
 /**
