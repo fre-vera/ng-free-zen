@@ -3,7 +3,7 @@
  */
 
 /**
- *@function Column
+ * @function Column
  * @param {CategorieData} data
  * @returns {string} HTML
  */
