@@ -6,6 +6,7 @@ import { Care } from './widgets/Care/Care.js';
 import { Cashback } from './widgets/Cashback/Cashback.js';
 import { Clients } from './widgets/Сlients/Clients.js';
 import { Footer } from './widgets/Footer/index.js';
+import { handleLogoClick } from './handlers.js';
 
 const $root = document.querySelector('#root');
 
@@ -17,9 +18,6 @@ $root?.insertAdjacentHTML('beforeend', Cashback(data.cashback));
 $root?.insertAdjacentHTML('beforeend', Clients(data.clients));
 $root?.insertAdjacentHTML('beforeend', Footer(data.secondaryInfo));
 
-const $logo = document.querySelector('#logo');
+const $logoBtn = document.querySelector('#logo');
 
-$logo?.addEventListener('clik', () => {
-  console.log('clickedLogo');
-});
-
+$logoBtn?.addEventListener('click', handleLogoClick);
