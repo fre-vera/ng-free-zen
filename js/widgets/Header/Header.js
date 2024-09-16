@@ -1,8 +1,8 @@
-import { Logo } from '../../features/Logo/Logo.js';
-import { Navigation } from '../../features/Navigation/Navigation.js';
-import { Lang } from '../../features/Lang/Lang.js';
-import { Theme } from '../../features/Theme/Theme.js';
-import { Burger } from '../../features/Burger/Burger.js';
+import { Logo } from '../../features/Logo/index.js';
+import { Navigation } from '../../features/Navigation/index.js';
+import { Lang } from '../../features/Lang/index.js';
+import { Theme } from '../../features/Theme/index.js';
+import { Burger } from '../../features/Burger/index.js';
 
 /**
  * @typedef {import('./types').HeaderData} HeaderData
