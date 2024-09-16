@@ -3,11 +3,11 @@ export type LogoData = {
   darkSource: string;
 };
 
-export type BrandData = {
+export type BrandFromAPI = {
   name: string;
   logo: LogoData;
 };
 
 export type ClientsData = {
-  brands: BrandData[];
+  brands: BrandFromAPI[];
 };
