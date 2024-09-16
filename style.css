@@ -42,7 +42,7 @@ select {
   outline: none;
 }
 
-.app.light {
+.root.light {
   --color-primary: #000;
   --color-footer: #fff;
   --border-color-primary: #aaa;
@@ -54,7 +54,7 @@ select {
   --bg-color-burger: #000;
   --color-icon: #000;
 }
-.app.dark {
+.root.dark {
   --color-primary: #fff;
   --color-secondary: #222;
   --color-footer: #fff;
@@ -95,7 +95,7 @@ body {
   font-weight: 400;
 }
 
-.app {
+.root {
   background: var(--bg-color-primary);
   color: var(--color-primary);
 }
