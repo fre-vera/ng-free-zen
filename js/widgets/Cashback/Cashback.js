@@ -1,5 +1,5 @@
-import { Title } from '../../ui/Title/index.js';
-import { CashbackButton } from '../../features/CashbackButton/CashbackButton.js';
+import { Title } from '../../ui/index.js';
+import { CashbackButton } from '../../features/index.js';
 
 /**
  * @typedef {import('./types.js').CashbackData} CashbackData

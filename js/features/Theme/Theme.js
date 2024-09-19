@@ -1,4 +1,4 @@
-import { IconTheme } from '../../ui/Icons/IconTheme/IconTheme.js';
+import { IconMoon } from '../../ui/icons/index.js';
 
 /**
  * @function Theme
@@ -10,7 +10,8 @@ export const Theme = (className) => `
   <button class="${className}"
     type="button"
     id="theme"
+    data-theme="light"
   >
-    ${IconTheme()}
+    ${IconMoon()}
   </button>
 `;

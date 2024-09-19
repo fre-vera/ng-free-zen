@@ -1,4 +1,4 @@
-import { Title } from '../../ui/Title/index.js';
+import { Title } from '../../ui/index.js';
 
 /**
  * @typedef {import('./types.js').WarrantyData} WarrantyData

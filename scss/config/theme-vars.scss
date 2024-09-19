@@ -1,4 +1,4 @@
-.app {
+.root {
   &.light {
     //color-text:
     --color-primary: #000;
@@ -13,7 +13,7 @@
     --bg-color-footer: #484848;
     --bg-color-modal-primary: #fff;
     --bg-color-modal-secondary: rgba(0, 0, 0, 0.6);
-    --bg-color-burger: #000; 
+    --bg-color-burger: #000;
 
     //color-icon:
     --color-icon: #000;
@@ -24,7 +24,7 @@
     --color-primary: #fff;
     --color-secondary: #222;
     --color-footer: #fff;
-    
+
     //border-color:
     --border-color-primary: #aaa;
     --border-color-secondary: #fff;

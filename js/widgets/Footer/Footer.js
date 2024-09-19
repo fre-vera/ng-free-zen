@@ -1,6 +1,5 @@
-import { Column } from '../../ui/Column/index.js';
-import { Developer } from '../../ui/Developer/index.js';
-import { IconFooterLogo } from '../../ui/Icons/IconFooterLogo/IconFooterLogo.js';
+import { Column, Developer } from '../../ui/index.js';
+import { IconFooterLogo } from '../../ui/icons/index.js';
 
 /**
  * @typedef {import('./types').FooterData} FooterData

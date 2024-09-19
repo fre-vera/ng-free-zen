@@ -1,4 +1,4 @@
-import { Iconlogo } from '../../ui/Icons/IconLogo/IconLogo.js';
+import { IconLogo } from '../../ui/icons/index.js';
 
 /**
  * @function Logo
@@ -11,6 +11,6 @@ export const Logo = (className) => `
     type="button"
     id="logo"
   >
-    ${Iconlogo()}
+    ${IconLogo()}
   </button>
 `;
