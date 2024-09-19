@@ -1,5 +1,5 @@
-import { IconMoon } from './ui/Icons/IconMoon/IconMoon.js';
-import { IconSun } from './ui/Icons/IconSun/IconSun.js';
+import { IconMoon } from './ui/icons/index.js';
+import { IconSun } from './ui/icons/index.js';
 
 /**
  * @function handleLogoClick
@@ -14,10 +14,15 @@ export const handleLogoClick = () => {
 };
 
 /**
+ * @typedef {import('./widgets/Сlients/types.js').BrandFromAPI} BrandFromAPI
+ */
+
+/**
  * @function onThemeClick
  * @description In an anonymous handler
  * @param {Event} event
- * @param {import('./widgets/Сlients/types.js').BrandFromAPI[]} brandsFromAPI
+ * @param {BrandFromAPI[]} brandsFromAPI
+ * @returns {void}
  */
 
 export const onThemeClick = (event, brandsFromAPI) => {
@@ -32,7 +37,10 @@ export const onThemeClick = (event, brandsFromAPI) => {
     ? $root.classList.remove('light')
     : $root.classList.add('light');
 
-  $themeBtn.dataset.theme = $themeBtn.dataset.theme === 'light' ? 'dark' : 'light';
+  $themeBtn.dataset.theme = $themeBtn.dataset.theme === 'light'
+    ? 'dark'
+    : 'light';
+
   $themeBtn.innerHTML = $themeBtn.dataset.theme === 'light'
     ? IconMoon()
     : IconSun();

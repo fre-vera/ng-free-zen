@@ -1,4 +1,4 @@
-import { Iconlang } from '../../ui/Icons/IconLang/IconLang.js';
+import { IconLang } from '../../ui/icons/index.js';
 
 /**
  * @function Lang
@@ -8,7 +8,7 @@ import { Iconlang } from '../../ui/Icons/IconLang/IconLang.js';
 
 export const Lang = (className) => `
   <label class="${className}">
-    ${Iconlang()}
+    ${IconLang()}
     <select id="lang">
       <option value="en">EN</option>
       <option value="ru">RU</option>
