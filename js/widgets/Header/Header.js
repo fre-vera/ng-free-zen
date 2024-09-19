@@ -20,7 +20,7 @@ export const Header = (data) => `
       <div class="header__actions">
         ${Lang('header__lang')}
         ${Theme('header__theme')}
-        ${Burger('burger')}
+        ${Burger('header__burger')}
       </div>
     </div>
   </header>
