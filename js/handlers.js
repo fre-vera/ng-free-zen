@@ -14,7 +14,7 @@ export const handleLogoClick = () => {
 };
 
 /**
- * @typedef {import('./widgets/Сlients/types.js').BrandFromAPI} BrandFromAPI
+ * @typedef {import('./types.js').BrandFromAPI} BrandFromAPI
  */
 
 /**
