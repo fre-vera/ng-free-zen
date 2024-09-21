@@ -24,7 +24,6 @@ const $logoBtn = document.querySelector('#logo');
 const $themeBtn = document.querySelector('#theme');
 const $burgerBtn = document.querySelector('#burger');
 
-
 $logoBtn?.addEventListener('click', handleLogoClick);
 $themeBtn?.addEventListener('click', (event) => onThemeClick(event, dataFromAPI.clients.brands));
 $burgerBtn?.addEventListener('click', onBurgerClick);
