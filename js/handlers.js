@@ -51,3 +51,30 @@ export const onThemeClick = (event, brandsFromAPI) => {
       : brandsFromAPI[index].logo.darkSource;
   });
 };
+
+/**
+ * @function onBurgerClick
+ * @description Handles burger button clicks and hides/shows menu items
+ */
+
+export const onBurgerClick = () => {
+  const $burgerBtn = document.querySelector('#burger');
+  const $nav = document.querySelector('#nav');
+  if (!$burgerBtn || !$nav) return;
+  $burgerBtn.classList.toggle('active');
+  $nav.classList.toggle('active');
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      $nav.classList.remove('active');
+      $burgerBtn.classList.remove('active');
+      const targetElement = document.querySelector(link.getAttribute('href') || '');
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
+    });
+  });
+};
