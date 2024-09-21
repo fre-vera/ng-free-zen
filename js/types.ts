@@ -88,7 +88,7 @@ export type ContentData = {
 export type FooterData = {
   categories: CategorieData[];
   texts: string[];
-  developer: LinkData;
+  developer: ColumnLinkData;
 };
 
 export type AppData = {
