@@ -64,12 +64,16 @@ export const onBurgerClick = () => {
   $burgerBtn.classList.toggle('active');
   $nav.classList.toggle('active');
 
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener('click', (event) => {
+  document.querySelectorAll('.nav__item').forEach((item) => {
+    item.addEventListener('click', (event) => {
       event.preventDefault();
       $nav.classList.remove('active');
       $burgerBtn.classList.remove('active');
-      const targetElement = document.querySelector(link.getAttribute('href') || '');
+      const link = item.querySelector('a');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (!href) return;
+      const targetElement = document.querySelector(href);
       if (targetElement) {
         targetElement.scrollIntoView({
           behavior: 'smooth',
