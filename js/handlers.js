@@ -1,5 +1,6 @@
 import { IconMoon } from './ui/icons/index.js';
 import { IconSun } from './ui/icons/index.js';
+import { toggleBurgerAndNav } from './utils/index.js';
 
 /**
  * @function handleLogoClick
@@ -53,32 +54,41 @@ export const onThemeClick = (event, brandsFromAPI) => {
 };
 
 /**
- * @function onBurgerClick
+ * @function handleBurgerClick
  * @description Handles burger button clicks and hides/shows menu items
  */
 
-export const onBurgerClick = () => {
-  const $burgerBtn = document.querySelector('#burger');
-  const $nav = document.querySelector('#nav');
-  if (!$burgerBtn || !$nav) return;
-  $burgerBtn.classList.toggle('active');
-  $nav.classList.toggle('active');
+export const handleBurgerClick = () => {
+  toggleBurgerAndNav();
+};
+
+/**
+ * @function handleNavClick
+ * @description Added click event listeners to navigation items and closes the menu on click
+ */
+
+export const handleNavClick = () => {
+  document.querySelectorAll('.nav__item').forEach((item) => {
+    item.replaceWith(item.cloneNode(true));
+  });
 
   document.querySelectorAll('.nav__item').forEach((item) => {
     item.addEventListener('click', (event) => {
       event.preventDefault();
-      $nav.classList.remove('active');
-      $burgerBtn.classList.remove('active');
       const link = item.querySelector('a');
       if (!link) return;
       const href = link.getAttribute('href');
       if (!href) return;
       const targetElement = document.querySelector(href);
       if (targetElement) {
-        targetElement.scrollIntoView({
+        const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({
+          top: targetPosition,
           behavior: 'smooth',
         });
       }
+      toggleBurgerAndNav();
     });
   });
 };
