@@ -67,28 +67,17 @@ export const handleBurgerClick = () => {
  * @description Added click event listeners to navigation items and closes the menu on click
  */
 
-export const handleNavClick = () => {
-  document.querySelectorAll('.nav__item').forEach((item) => {
-    item.replaceWith(item.cloneNode(true));
+export const handleNavClick = (event) => {
+  event.preventDefault();
+  const $navLinks = event.target.hash;
+  if (!$navLinks) return;
+  const $targetElement = document.querySelector($navLinks);
+  if (!$targetElement) return;
+  const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+  const targetPosition = $targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth',
   });
-
-  document.querySelectorAll('.nav__item').forEach((item) => {
-    item.addEventListener('click', (event) => {
-      event.preventDefault();
-      const link = item.querySelector('a');
-      if (!link) return;
-      const href = link.getAttribute('href');
-      if (!href) return;
-      const targetElement = document.querySelector(href);
-      if (targetElement) {
-        const headerHeight = document.querySelector('header')?.offsetHeight || 0;
-        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth',
-        });
-      }
-      toggleBurgerAndNav();
-    });
-  });
+  toggleBurgerAndNav();
 };
