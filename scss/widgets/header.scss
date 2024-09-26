@@ -63,6 +63,9 @@
     height: 100%;
     width: 100%;
     color: var(--color-primary);
+    option {
+      background: var(--bg-color-primary);
+    }
   }
   }
 

@@ -244,6 +244,9 @@ img {
   width: 100%;
   color: var(--color-primary);
 }
+.header__lang select option {
+  background: var(--bg-color-primary);
+}
 .header__theme {
   width: 26px;
   height: 26px;
