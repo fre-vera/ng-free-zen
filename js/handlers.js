@@ -64,14 +64,14 @@ export const handleBurgerClick = () => {
 
 /**
  * @function handleNavClick
- * @description Added click event listeners to navigation items and closes the menu on click
+ * @description Set scrolling with the header height, hide nav menu
  */
 
 export const handleNavClick = (event) => {
   event.preventDefault();
-  const $navLinks = event.target.hash;
-  if (!$navLinks) return;
-  const $targetElement = document.querySelector($navLinks);
+  const NavItemID = event.target.hash;
+  if (!NavItemID) return;
+  const $targetElement = document.querySelector(NavItemID);
   if (!$targetElement) return;
   const headerHeight = document.querySelector('header')?.offsetHeight || 0;
   const targetPosition = $targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
