@@ -1,14 +1,16 @@
 /* nav */
 .nav {
-  display: none;
+  position: fixed;
+  top: 51px;
+  left: 0;
+  right: 0;
+  transform: translateY(-150%);
+  transition: transform 0.5s ease;
+  z-index: 10000;
   background: var(--bg-color-primary);
 
   &.active {
-    display: block;
-    position: fixed;
-    top: 51px;
-    left: 0;
-    right: 0;
+    transform: translateY(0);
   }
 
   &__item {

@@ -17,12 +17,13 @@ h6 {
   text-align: inherit;
 }
 
-ul, 
+ul,
 ol {
   list-style:none;
 }
 
 a {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
