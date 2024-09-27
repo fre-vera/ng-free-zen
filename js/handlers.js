@@ -1,5 +1,6 @@
 import { IconMoon } from './ui/icons/index.js';
 import { IconSun } from './ui/icons/index.js';
+import { toggleBurgerAndNav } from './utils/index.js';
 
 /**
  * @function handleLogoClick
@@ -14,7 +15,7 @@ export const handleLogoClick = () => {
 };
 
 /**
- * @typedef {import('./widgets/Сlients/types.js').BrandFromAPI} BrandFromAPI
+ * @typedef {import('./types.js').BrandFromAPI} BrandFromAPI
  */
 
 /**
@@ -50,4 +51,33 @@ export const onThemeClick = (event, brandsFromAPI) => {
       ? brandsFromAPI[index].logo.lightSource
       : brandsFromAPI[index].logo.darkSource;
   });
+};
+
+/**
+ * @function handleBurgerClick
+ * @description Handles burger button clicks and hides/shows menu items
+ */
+
+export const handleBurgerClick = () => {
+  toggleBurgerAndNav();
+};
+
+/**
+ * @function handleNavClick
+ * @description Set scrolling with the header height, hide nav menu
+ */
+
+export const handleNavClick = (event) => {
+  event.preventDefault();
+  const NavItemID = event.target.hash;
+  if (!NavItemID) return;
+  const $targetElement = document.querySelector(NavItemID);
+  if (!$targetElement) return;
+  const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+  const targetPosition = $targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth',
+  });
+  toggleBurgerAndNav();
 };
